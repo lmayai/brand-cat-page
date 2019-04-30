@@ -32,3 +32,50 @@ nav li a {
 nav li a:hover{
     color: white;
 }
+
+
+/***   MAIN SECTION ******/
+
+.main-section{
+    padding: 10%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../img/curve.png");
+    max-height: 50px;
+    background-size:cover;
+    background-position: center top;
+    display: flex;
+    justify-content:center; 
+    padding: 20%;
+}
+
+.product{
+    padding: 10px;
+    margin-top: -340px;
+}
+.product .content{
+    background-color:white;
+    padding: 15px;
+    box-shadow: 0 0 1px #c1bcbd; /* x y size*/
+}
+
+.img-content{
+    text-align: center;
+}
+
+.main-button{
+    background-color: #7ACC2D;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    border:0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main-button:hover{
+    background-color: rgb(81, 136, 30);
+}
