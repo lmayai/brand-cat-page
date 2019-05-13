@@ -6,16 +6,19 @@ Todo dentro de root sera accesible en las demas clases*/
 :root{
     --green-color:#7ACC2D;
     --white-color:white;
-    --black-color:#313331;
-
+    --black-color:black;
+    --dark-color:#313337;
+    --white-light-color:#EEEEEE;
     /*Espaciado*/
     --space:10px;
 
     /*Tipografía*/
     --normal-font:12px;
+    --bold-font:17px;
+    --title-font:30px;
 
     /*Box shadow*/
-    --box:  0 0 1px #c1bcbd;
+    --box:  0 0 1px #c1bcbd;  /* x y size*/
 }
 
 
@@ -80,7 +83,7 @@ nav li a:hover{
 .product .content{
     background-color: var(--white-color);
     padding: 15px;
-    box-shadow: var(--box); /* x y size*/
+    box-shadow: var(--box);
 }
 
 .img-content{
@@ -100,4 +103,68 @@ nav li a:hover{
 
 .main-button:hover{
     background-color: rgb(81, 136, 30);
+}
+
+#characteristics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+} 
+
+#characteristics img{
+    max-width: 200px;
+    padding-bottom: 20px; 
+}
+
+.charac{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 100px;  
+}
+
+.mentions-title{
+    font-size: var(--bold-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#mentions{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 50px;
+}
+
+.mention{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box);
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.mention-img-content{
+    margin: 0;
+    height: 100px;
+    width: 240px;
+}
+
+.mention-img-content img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mention-name,
+.mention-desc{
+    padding: 5px;
+}
+
+.mention-name h3{
+    margin: 0;
 }
