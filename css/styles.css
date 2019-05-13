@@ -1,15 +1,37 @@
+/*VARIABLEs
+Todo dentro de root sera accesible en las demas clases*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root{
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313331;
+
+    /*Espaciado*/
+    --space:10px;
+
+    /*Tipografía*/
+    --normal-font:12px;
+
+    /*Box shadow*/
+    --box:  0 0 1px #c1bcbd;
+}
+
+
+
 html,body{
     padding: 0;
     margin: 0;
-    font-size: 12px;
-    font-family: Helvetica, sans-serif;
+    font-size: var(--normal-font);
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
     display: flex;
-    background-color: #7ACC2D;
-    padding: 10px;
-    color: white;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -24,13 +46,13 @@ nav li{
 }
 
 nav li a {
-    color: gray;
+    color: var(--black-color);
     text-decoration: none;
     font-size:1.2em;
 }
 
 nav li a:hover{
-    color: white;
+    color: var(--white-color);
 }
 
 
@@ -56,9 +78,9 @@ nav li a:hover{
     margin-top: -340px;
 }
 .product .content{
-    background-color:white;
+    background-color: var(--white-color);
     padding: 15px;
-    box-shadow: 0 0 1px #c1bcbd; /* x y size*/
+    box-shadow: var(--box); /* x y size*/
 }
 
 .img-content{
@@ -66,11 +88,11 @@ nav li a:hover{
 }
 
 .main-button{
-    background-color: #7ACC2D;
+    background-color: var(--green-color);
     width: 100%;
-    padding: 10px;
+    padding: var(--space);
     font-size: 17px;
-    color: white;
+    color: var(--white-color);
     border:0;
     cursor: pointer;
     border-radius: 2px;
