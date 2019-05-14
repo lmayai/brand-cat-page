@@ -1,3 +1,20 @@
+.text-center{
+    text-align: center;
+}
+
+.pb-4{
+    padding-bottom: 40px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.border-cat {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
 .container{
     max-width: 900px;
     margin: auto;
@@ -67,5 +84,4 @@
     .row{
         display:inherit;
     }
-
 }
