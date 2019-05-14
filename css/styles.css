@@ -169,3 +169,19 @@ nav li a:hover{
 .mention-name h3{
     margin: 0;
 }
+
+/************* Payment*/
+
+.module-pay{
+    background-color: var(--white-light-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.module-pay-img{
+    max-width: 150px;
+    text-align: center;
+    margin:auto; 
+}
+
+/************* Payment*/
