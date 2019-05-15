@@ -146,7 +146,7 @@ nav li a:hover{
 }
 
 .mention{
-    width: 240px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     box-shadow: var(--box);
@@ -156,8 +156,8 @@ nav li a:hover{
 
 .mention-img-content{
     margin: 0;
-    height: 100px;
-    width: 240px;
+    height: 150px;
+    width: 300px;
 }
 
 .mention-img-content img{
@@ -214,3 +214,7 @@ footer{
     padding: var(--space);
     color: var(--white-color);
   }
+
+.option a{
+    color: var(--green-color);
+}
